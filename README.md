@@ -41,7 +41,7 @@ $config['source']	= '/theme/js/ganalitics.js';
 Into your views file in header you need to seample call global variable ganalitics.
 
 if( defined('ganalytics') ) {
-  print( ganalitics );
+  print( ganalytics );
 }
 
 When ENVIRONMENT setup to production your google analytics will be include into the page.
