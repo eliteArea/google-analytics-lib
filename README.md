@@ -16,6 +16,8 @@ google-analytics-lib is a spark that allows to include google analitics on your 
 
 ## Usage
 
+controler call
+
 ### $this->load->spark('google-analytics-lib/1.0');
 
 To load the google-analytics-lib spark..
@@ -35,3 +37,9 @@ To load the google-analytics-lib spark..
 In config file setup source where your js for analitics is stored
 
 $config['source']	= '/theme/js/ganalitics.js';
+
+Into your views file in header you need to seample call global variable ganalitics.
+
+if( defined('ganalitics') ) {
+  print( ganalitics );
+}
