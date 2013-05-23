@@ -21,7 +21,7 @@ class Analytics {
 			{
 				$analitic = $this->path;
 				$script = "<script type='text/javascript' src='{$analitic}'></script>";
-				define('ganalitics', $script );
+				define('ganalytics', $script );
 			}
 		}
 		else
