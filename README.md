@@ -23,3 +23,9 @@ To load the google-analytics-lib spark..
 
 
 ## google analytics-lib 1.
+
+# incluede:
+
+	config-> autoload.php
+	config-> config.php
+	libraries->analytics.php
