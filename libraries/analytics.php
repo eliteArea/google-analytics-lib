@@ -5,6 +5,7 @@ class Analytics {
 	private $ci;    // for CodeIgniter Super Global Reference.
 	private $path;
 	
+	
 	public function __construct()
 	{
 		$this->ci =& get_instance();
