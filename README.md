@@ -18,7 +18,7 @@ google-analytics-lib is a spark that allows to include google analitics on your 
 
 controler call
 
-## $this->load->spark('google-analytics-lib/2.0.0');
+## $this->load->spark('google-analytics-lib/x.x.x');
 
 
 To load the google-analytics-lib spark..
