@@ -12,7 +12,7 @@ class Analytics {
 		$this->ci->config->load('config');
 		$this-> path = $this->ci->config->item('source');
 		$this->analitic();
-  }
+    }
   
   private function analitic()
   {
@@ -20,9 +20,17 @@ class Analytics {
 		{
 			if( ENVIRONMENT != 'development' )
 			{
+				
 				$analitic = $this->path;
-				$script = "<script type='text/javascript' src='{$analitic}'></script>";
-				define('ganalytics', $script );
+				$rootpath = $this->ci->config->item('pubic_html');
+				$rootanalitic = BASEPATH . "../" . $rootpath . "/" . $analitic;
+				
+				if( file_exists($rootanalitic) )
+				{
+					$script = "<script type='text/javascript' src='{$analitic}'></script>";
+					define('ganalytics', $script );
+				}
+				
 			}
 		}
 		else
@@ -31,5 +39,5 @@ class Analytics {
 		}
 		
 	}
-  
+	
 }
